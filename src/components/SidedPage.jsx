@@ -1,4 +1,4 @@
-function SidedPage({ children }) {
+function SidedPage({ title, subtitle, children }) {
   return <div className="container">
     <aside>
       <p>
@@ -9,6 +9,8 @@ function SidedPage({ children }) {
 
     <main>
       <div className="cadastro">
+        {title && <h1>{title}</h1>}
+        {subtitle && <p>{subtitle}</p>}
         {children}
       </div>
     </main>

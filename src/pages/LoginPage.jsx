@@ -24,9 +24,10 @@ function LoginPage() {
     setError("");
     console.log("Login: ", email, password);
   }
-  return <SidedPage>
-    <h1>Bem-vindo de volta</h1>
-    <p>Por favor, insira suas credenciais para acessar seu painel acadêmico</p>
+  return <SidedPage
+    title="Bem-vindo de volta"
+    subtitle="Por favor, insira suas credenciais para acessar seu painel acadêmico"
+  >
 
     <form onSubmit={handleSubmit}>
       <InputField
